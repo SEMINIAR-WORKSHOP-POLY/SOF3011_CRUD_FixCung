@@ -24,7 +24,6 @@ import java.util.List;
         "/sinh-vien/update",    // POST
         "/sinh-vien/delete",    // GET
         "/sinh-vien/detail",    // GET
-        "/sinh-vien/search"     // GET
 })
 public class SinhVienController extends HttpServlet {
 
