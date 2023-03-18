@@ -23,28 +23,24 @@
         <div class="row mt-4">
             <div class="col-6">
                 <label>Mã sinh viên</label>
-                <label></label>
             </div>
             <div class="col-6">
                 <label>Tên sinh viên</label>
-                <label></label>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-6">
                 <label>Tuổi </label>
-                <label></label>
             </div>
             <div class="col-6">
                 <label>Giới tính </label>
-                <label></label>
 
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-12">
                 <label>Địa chỉ </label>
-                <label></label>
+                ${sinhVien.diaChi}
             </div>
         </div>
     </section>

@@ -16,11 +16,11 @@
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-<header class="container"> <h3 style="text-align: center;margin-top:15px;">Quản Lý Sinh Viên</h3>
+<header class="container"><h3 style="text-align: center;margin-top:15px;">Quản Lý Sinh Viên</h3>
 </header>
 <main class="container">
     <section>
-        <a href="#" class="btn btn-success " tabindex="-1" role="button"
+        <a href="/sinh-vien/view-add" class="btn btn-success " tabindex="-1" role="button"
            aria-disabled="true">Add</a>
     </section>
     <section>
@@ -36,6 +36,7 @@
             </tr>
             </thead>
             <tbody>
+
             </tbody>
         </table>
     </section>

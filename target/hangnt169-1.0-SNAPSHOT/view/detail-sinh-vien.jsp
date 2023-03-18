@@ -16,48 +16,38 @@
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="nav-link active" aria-current="page" href="/lop-hoc/hien-thi">Lớp học</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Sinh Viên</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<header class="container"><h3 style="text-align: center;margin-top:15px;"> Thông tin Sinh Viên</h3>
 </header>
 <main class="container">
-    <h3 style="text-align: center;">Thông Tin Chi Tiết Lớp Học</h3>
     <section>
         <div class="row mt-4">
             <div class="col-6">
-                <label>Mã lớp</label>
-                <span type="text">${lopHoc.maLop}</span>
+                <label>Mã sinh viên</label>
+                <label>${sinhVien.mssv}</label>
             </div>
             <div class="col-6">
-                <label>Tên lớp</label>
-                <span type="text">${lopHoc.tenLop}</span>
+                <label>Tên sinh viên</label>
+                <label>${sinhVien.ten}</label>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <label>Tuổi </label>
+                <label>:${sinhVien.tuoi}</label>
+            </div>
+            <div class="col-6">
+                <label>Giới tính </label>
+                <label><c:if test="${sinhVien.gioiTinh == 'true'}">Nam</c:if>
+                    <c:if test="${sinhVien.gioiTinh == 'false'}">Nữ</c:if></label>
 
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-12">
-                <label>Số lượng SV</label>
-                <span type="text">${lopHoc.soLuongSV}</span>
-
+                <label>Địa chỉ </label>
+                ${sinhVien.diaChi}
             </div>
         </div>
-
-
     </section>
 
 </main>

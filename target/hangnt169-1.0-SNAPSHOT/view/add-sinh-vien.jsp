@@ -16,49 +16,39 @@
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="nav-link active" aria-current="page" href="/lop-hoc/hien-thi">Lớp học</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Sinh Viên</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<header class="container"><h3 style="text-align: center;margin-top:15px;">Thêm thông tin Sinh Viên</h3>
 </header>
 <main class="container">
-    <h3 style="text-align: center;">Thêm Lớp Học</h3>
     <section>
-        <form action="/lop-hoc/add" method="post">
+        <form action="#" method="post">
             <div class="row mt-4">
                 <div class="col-6">
-                    <label>Mã lớp</label>
-                    <input type="text" class="form-control" name="maLop"/>
-                    <span style="color: red;">${maEmpty}</span>
+                    <label>Mã sinh viên</label>
+                    <input type="text" class="form-control"name="mssv"/>
                 </div>
                 <div class="col-6">
-                    <label>Tên lớp</label>
-                    <input type="text" class="form-control" name="tenLop"/>
-                    <span style="color: red;">${tenEmpty}</span>
+                    <label>Tên sinh viên</label>
+                    <input type="text" class="form-control"name="ten"/>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <label>Tuổi </label>
+                    <input type="text" class="form-control"name="tuoi"/>
+                </div>
+                <div class="col-6">
+                    <label>Giới tính </label>
+                    <input type="radio" name="gioiTinh" value="true" checked/>Nam
+                    <input type="radio" name="gioiTinh" value="false"/>Nữ
+
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-12">
-                    <label>Số lượng SV</label>
-                    <input type="text" class="form-control" name="soLuongSinhVien"/>
-                    <span style="color: red;">${soLuongSVEmpty}</span>
+                    <label>Địa chỉ </label>
+                    <input type="text" class="form-control" name="diaChi"/>
                 </div>
             </div>
-
             <div class="row mt-4" style="justify-content: center">
                 <button class="btn btn-success col-1 m-3">
                     Add
@@ -66,6 +56,7 @@
             </div>
         </form>
     </section>
+
 </main>
 <footer><p style="text-align: center;">HangNT169</p></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

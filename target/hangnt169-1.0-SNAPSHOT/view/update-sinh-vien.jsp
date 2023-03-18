@@ -20,33 +20,41 @@
 </header>
 <main class="container">
     <section>
-        <form action="#" method="post">
+        <form action="/sinh-vien/update" method="post">
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Mã sinh viên</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" value="${sinhVien.mssv}"/>
                 </div>
                 <div class="col-6">
                     <label>Tên sinh viên</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" value="${sinhVien.ten}"/>
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Tuổi </label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" value="${sinhVien.tuoi}"/>
                 </div>
                 <div class="col-6">
                     <label>Giới tính </label>
-                    <input type="radio" name="gioiTinh" value="true"/>Nam
-                    <input type="radio" name="gioiTinh" value="false"/>Nữ
+                    <c:choose>
+                        <c:when test="${sinhVien.gioiTinh == 'true'}">
+                            <input type="radio" name="gioiTinh" checked value="true"/>Nam
+                            <input type="radio" name="gioiTinh" value="false"/>Nữ
+                        </c:when>
+                        <c:otherwise>
+                            <input type="radio" name="gioiTinh" value="true"/>Nam
+                            <input type="radio" name="gioiTinh" checked value="false"/>Nữ
+                        </c:otherwise>
+                    </c:choose>
 
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-12">
                     <label>Địa chỉ </label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" value="${sinhVien.diaChi}"/>
                 </div>
             </div>
             <div class="row mt-4" style="justify-content: center">

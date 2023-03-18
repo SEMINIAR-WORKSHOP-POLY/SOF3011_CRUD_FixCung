@@ -24,17 +24,17 @@
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Mã sinh viên</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control"name="mssv"/>
                 </div>
                 <div class="col-6">
                     <label>Tên sinh viên</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control"name="ten"/>
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Tuổi </label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control"name="tuoi"/>
                 </div>
                 <div class="col-6">
                     <label>Giới tính </label>
@@ -46,7 +46,7 @@
             <div class="row mt-4">
                 <div class="col-12">
                     <label>Địa chỉ </label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" name="diaChi"/>
                 </div>
             </div>
             <div class="row mt-4" style="justify-content: center">

@@ -24,7 +24,7 @@
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Mã sinh viên</label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" />
                 </div>
                 <div class="col-6">
                     <label>Tên sinh viên</label>
@@ -38,15 +38,12 @@
                 </div>
                 <div class="col-6">
                     <label>Giới tính </label>
-                    <input type="radio" name="gioiTinh" value="true" checked/>Nam
-                    <input type="radio" name="gioiTinh" value="false"/>Nữ
-
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-12">
                     <label>Địa chỉ </label>
-                    <input type="text" class="form-control"/>
+                    <input type="text" class="form-control" />
                 </div>
             </div>
             <div class="row mt-4" style="justify-content: center">
