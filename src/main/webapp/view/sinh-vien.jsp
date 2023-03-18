@@ -20,7 +20,7 @@
 </header>
 <main class="container">
     <section>
-        <a href="/sinh-vien/view-add" class="btn btn-success " tabindex="-1" role="button"
+        <a href="#" class="btn btn-success " tabindex="-1" role="button"
            aria-disabled="true">Add</a>
     </section>
     <section>
