@@ -20,45 +20,36 @@
 </header>
 <main class="container">
     <section>
-        <form action="#" method="post">
+        <form action="/sinh-vien/update" method="post">
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Mã sinh viên</label>
-                    <input type="text" class="form-control" value="${sinhVien.mssv}"/>
+                    <input type="text" class="form-control" value="${sinhVien.maSV}" name="mssv"/>
                 </div>
                 <div class="col-6">
                     <label>Tên sinh viên</label>
-                    <input type="text" class="form-control" value="${sinhVien.ten}"/>
+                    <input type="text" class="form-control" value="${sinhVien.tenSV}" name="tenSV"/>
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Tuổi </label>
-                    <input type="text" class="form-control" value="${sinhVien.tuoi}"/>
+                    <input type="text" class="form-control" value="${sinhVien.tuoi}" name="tuoi"/>
                 </div>
                 <div class="col-6">
                     <label>Giới tính </label>
-                    <c:choose>
-                        <c:when test="${sinhVien.gioiTinh == 'true'}">
-                            <input type="radio" name="gioiTinh" checked value="true"/>Nam
-                            <input type="radio" name="gioiTinh" value="false"/>Nữ
-                        </c:when>
-                        <c:otherwise>
-                            <input type="radio" name="gioiTinh" value="true"/>Nam
-                            <input type="radio" name="gioiTinh" checked value="false"/>Nữ
-                        </c:otherwise>
-                    </c:choose>
-
+                    <input type="radio" name="gioiTinh" value="true" ${sinhVien.gioiTinh == true ?"checked":""}>Nam
+                    <input type="radio" name="gioiTinh" value="false" ${sinhVien.gioiTinh == false ?"checked":""}>Nữ
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-12">
                     <label>Địa chỉ </label>
-                    <input type="text" class="form-control" value="${sinhVien.diaChi}"/>
+                    <input type="text" class="form-control" value="${sinhVien.diaChi}" name="diaChi"/>
                 </div>
             </div>
             <div class="row mt-4" style="justify-content: center">
-                <button class="btn btn-primary col-1 m-3">
+                <button class="btn btn-primary col-1 m-3" type="submit">
                     Update
                 </button>
             </div>

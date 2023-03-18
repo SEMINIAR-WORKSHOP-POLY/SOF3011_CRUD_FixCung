@@ -16,7 +16,7 @@
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-<header class="container"> <h3 style="text-align: center;margin-top:15px;">Quản Lý Sinh Viên</h3>
+<header class="container"><h3 style="text-align: center;margin-top:15px;">Quản Lý Sinh Viên</h3>
 </header>
 <main class="container">
     <section>
@@ -36,33 +36,25 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach items="${sinhViens}" var="acc">
+            <%--            for(SinhVien sv:lists)--%>
+            <c:forEach items="${sinhViens}" var="sv">
                 <tr>
-                    <td>${acc.mssv}</td>
-                    <td>${acc.ten}</td>
-                    <td>${acc.tuoi}</td>
-                    <td>${acc.diaChi}</td>
+                    <td>${sv.maSV}</td>
+                    <td>${sv.tenSV}</td>
+                    <td>${sv.tuoi}</td>
+                    <td>${sv.diaChi}</td>
                     <td>
-                            <%--                <c:choose>--%>
-                            <%--                    &lt;%&ndash; When gioi tinh  == 'true' &ndash;%&gt;--%>
-                            <%--                    <c:when test="${acc.gioiTinh=='true'}">--%>
-                            <%--                        Nam--%>
-                            <%--                    </c:when>--%>
-                            <%--                    &lt;%&ndash; Otherwise &ndash;%&gt;--%>
-                            <%--                    <c:otherwise>--%>
-                            <%--                        Nữ--%>
-                            <%--                    </c:otherwise>--%>
-                            <%--                </c:choose>--%>
-                        <c:if test="${acc.gioiTinh == 'true'}">Nam</c:if>
-                        <c:if test="${acc.gioiTinh == 'false'}">Nữ</c:if>
+                        <c:if test="${sv.gioiTinh == 'true'}">Nam</c:if>
+                        <c:if test="${sv.gioiTinh == 'false'}">Nữ</c:if>
                     </td>
                     <td>
-                       <a href="/sinh-vien/detail?mssv=${acc.mssv}"
-                                   class="btn btn-primary"> detail </a>
-                        <a href="/sinh-vien/delete?mssv=${acc.mssv}"
-                                   class="btn btn-danger"> delete </a>
-                        <a href="/sinh-vien/view-update?mssv=${acc.mssv}"
-                                   class="btn btn-success"> update </a>
+                        <a href="/sinh-vien/detail?mssv=${sv.maSV}" class="btn btn-primary " tabindex="-1" role="button"
+                           aria-disabled="true">Detail</a>
+                        <a href="/sinh-vien/delete?mssv=${sv.maSV}" class="btn btn-danger " tabindex="-1" role="button"
+                           aria-disabled="true">Delete</a>
+                        <a href="/sinh-vien/view-update?mssv=${sv.maSV}" class="btn btn-success " tabindex="-1"
+                           role="button"
+                           aria-disabled="true">Update</a>
                     </td>
                 </tr>
             </c:forEach>

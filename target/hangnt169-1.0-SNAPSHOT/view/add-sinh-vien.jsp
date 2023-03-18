@@ -20,7 +20,7 @@
 </header>
 <main class="container">
     <section>
-        <form action="#" method="post">
+        <form action="/sinh-vien/add" method="post">
             <div class="row mt-4">
                 <div class="col-6">
                     <label>Mã sinh viên</label>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="row mt-4" style="justify-content: center">
-                <button class="btn btn-success col-1 m-3">
+                <button class="btn btn-success col-1 m-3" type="submit">
                     Add
                 </button>
             </div>

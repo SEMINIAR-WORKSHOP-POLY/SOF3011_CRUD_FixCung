@@ -23,29 +23,30 @@
         <div class="row mt-4">
             <div class="col-6">
                 <label>Mã sinh viên</label>
-                <label>${sinhVien.mssv}</label>
+                <label>${sinhVien.maSV}</label>
             </div>
             <div class="col-6">
                 <label>Tên sinh viên</label>
-                <label>${sinhVien.ten}</label>
+                <label>${sinhVien.tenSV}</label>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-6">
                 <label>Tuổi </label>
-                <label>:${sinhVien.tuoi}</label>
+                <label>${sinhVien.tuoi}</label>
             </div>
             <div class="col-6">
                 <label>Giới tính </label>
-                <label><c:if test="${sinhVien.gioiTinh == 'true'}">Nam</c:if>
-                    <c:if test="${sinhVien.gioiTinh == 'false'}">Nữ</c:if></label>
-
+                <label>
+                    <c:if test="${sinhVien.gioiTinh == 'true'}">Nam</c:if>
+                    <c:if test="${sinhVien.gioiTinh == 'false'}">Nữ</c:if>
+                </label>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-12">
                 <label>Địa chỉ </label>
-                ${sinhVien.diaChi}
+                <label>${sinhVien.diaChi}</label>
             </div>
         </div>
     </section>
